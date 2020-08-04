@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* ==============================
+* 공통 컨텐츠
+* ============================== */
+#subContentWrap .subContArea .contentTitleArea h3.contentTitle { padding:20px 0 56px; font-size:26px; text-align:center; }
+#subContentWrap .subContArea .contentTitleArea .headerBtn { display:none; }
+/* ==============================
+* 자주묻는 질문
+* ============================== */ 
+/* 검색박스 */
+#subContentWrap .subContArea .searchBox { width:900px; padding:23px 90px; border:3px solid #d8dfeb; }
+#subContentWrap .subContArea .searchBox > fieldset > legend { font-size:0; line-height: 0; }
+#subContentWrap .subContArea .searchBox > fieldset > dl { width:100%; display:flex; flex-wrap:wrap;  }
+#subContentWrap .subContArea .searchBox > fieldset > dl > dt { width:120px; }
+#subContentWrap .subContArea .searchBox > fieldset > dl label { color:#4e4f51; font-weight:400; font-size:18px; line-height:40px; }
+#subContentWrap .subContArea .searchBox > fieldset > dl > dd { width:calc(100% - 120px); }
+#subContentWrap .subContArea .searchBox > fieldset > dl > dd .searchSelect01 { width:435px; margin-bottom:8px; }
+#subContentWrap .subContArea .searchBox > fieldset > dl > dd .searchSelect02 { width:210px }
+#subContentWrap .subContArea .searchBox > fieldset > dl > dd .searchSelect02 + label { font-size:0; line-height:0; }
+#subContentWrap .subContArea .searchBox > fieldset > dl > dd .searchSelect02 + label + input { width:210px; margin:0 12px 0 8px; }
+/* qna */
+#subContentWrap .subContArea .qnaArea { padding:130px 0 0; }
+#subContentWrap .subContArea .qnaArea .sortArea { display: flex; justify-content: space-between; padding: 8px 0; }
+#subContentWrap .subContArea .qnaArea .sortArea .totalNum { font-size:16px; line-height:30px; font-weight:400; color:#727476; }
+#subContentWrap .subContArea .qnaArea .sortArea .totalNum strong { color:#f58220; }
+#subContentWrap .subContArea .qnaArea .sortArea .selectViewArea .selectView { display:inline-block; }
+#subContentWrap .subContArea .qnaArea .sortArea .selectViewArea label { font-size:0; }
+#subContentWrap .subContArea .qnaArea > ul { border-top:2px solid #2d4059; }
+#subContentWrap .subContArea .qnaArea > ul > li {border-bottom: 1px solid #e3e7ee;}
+#subContentWrap .subContArea .qnaArea .qnaQ {position:relative; cursor: pointer; padding: 25px 30px; }  
+#subContentWrap .subContArea .qnaArea .qnaQ:after {content:''; position:absolute; top:calc(50% - 4px); right:30px; display:inline-block; width:17px; height:8px; background:url('../new_images/common/arrowQna.png') no-repeat 0 -8px; }
+#subContentWrap .subContArea .qnaArea .qnaQ .txtQ { padding:0px 25px 0px 0px; }
+#subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection { display: flex; justify-content:flex-start; padding-bottom:10px; }
+#subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li { font-size:14px; line-height:15px; color:#727476; font-weight:400; padding:0 20px; border-right:1px solid #cccccc; }
+#subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li:first-child { padding-left:0; }
+#subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li:last-child { border-right:0; }
+#subContentWrap .subContArea .qnaArea .qnaQ .txtQ .qnaText { font-size:18px; line-height:24px; font-weight:400; color:#292a2d; }
+#subContentWrap .subContArea .qnaArea .qnaA { position:relative; padding:30px 50px 30px 95px; border-bottom: 1px dashed #e3e7ee; background:#f4f6f9; display:none; }
+#subContentWrap .subContArea .qnaArea .iconA { position:absolute; top:50%; left:50px; margin-top:-9px; display:inline-block; width:16px; height:18px; background:url('../new_images/common/icoAnswer.png') no-repeat 0 0; background-size:100%; font-size:0; }
+#subContentWrap .subContArea .qnaArea .qnaA .txtA { color:#4e4f51; line-height:21px; font-size:14px; font-weight:400; }
+#subContentWrap .subContArea .qnaArea > ul > li.on {border-bottom:none;}
+#subContentWrap .subContArea .qnaArea > ul > li.on .qnaQ:after { background-position:0 0;}
+#subContentWrap .subContArea .qnaArea > ul > li.on .txtQ {color:#333;}
+#subContentWrap .subContArea .qnaArea > ul + .pagenation { margin-top:20px; }
+#subContentWrap .subContArea .qnaArea .moreBtn { display:none; }
+
+/* Max해상도 : 아이폰X */
+@media screen and (max-width:812px) { 
+    /* ==============================
+    * 공통 컨텐츠
+    * ============================== */
+    #subContentWrap .subContArea { width:100%; }
+    #subContentWrap .subContArea .contentTitleArea { position:relative; height:57px; padding:18px 15px; }
+    #subContentWrap .subContArea .contentTitleArea .headerBtn { display:block; }
+    #subContentWrap .subContArea .contentTitleArea .btn { position:absolute; top:18px; background:url('../new_images/common/icoHeader.png') no-repeat; background-size:144px 24px; width:24px; height:24px; font-size:0; line-height:0; }
+    #subContentWrap .subContArea .contentTitleArea .searhBtn { right:47px; background-position:-24px 0;}
+    #subContentWrap .subContArea .contentTitleArea .alamBtn { right:15px; background-position:-48px 0;}
+    #subContentWrap .subContArea .contentTitleArea h3.contentTitle { padding:0; font-size:18px; text-align:center; line-height:21px; }
+
+    /* ==============================
+    * 자주묻는 질문
+    * ============================== */ 
+    /* 검색박스 */
+    #subContentWrap .subContArea .searchBox { width:100%; padding:32px 30px; border:none; border-bottom :2px solid #e1e4e9; background:#f6f6f6; }
+    #subContentWrap .subContArea .searchBox > fieldset > dl { width:100%; display:block; }
+    #subContentWrap .subContArea .searchBox > fieldset > dl > dt { width:100%; }
+    #subContentWrap .subContArea .searchBox > fieldset > dl label { color:#4e4f51; font-size:14px; line-height:16px; }
+    #subContentWrap .subContArea .searchBox > fieldset > dl > dd { width:100%; margin-top:13px; }
+    #subContentWrap .subContArea .searchBox > fieldset > dl > dd .searchSelect01 { width:100%; margin-bottom:28px; }
+    #subContentWrap .subContArea .searchBox > fieldset > dl > dd .searchSelect02 { width:100%; margin-bottom:10px; }
+    #subContentWrap .subContArea .searchBox > fieldset > dl > dd .searchSelect02 + label { display:none; }
+    #subContentWrap .subContArea .searchBox > fieldset > dl > dd .searchSelect02 + label + input { width:100%; margin:0; }
+    #subContentWrap .subContArea .searchBox > fieldset > dl > dd .searchSelect02 + label + input + .btnGroup { margin-top:24px; width:100%; }
+    
+    /* qna */
+    #subContentWrap .subContArea .qnaArea { width:100%; padding:40px 15px 75px; }
+    #subContentWrap .subContArea .qnaArea .sortArea { display: none; }
+    #subContentWrap .subContArea .qnaArea > ul { border-top:2px solid #727476; }
+    #subContentWrap .subContArea .qnaArea > ul > li {border-bottom: 1px solid #e3e7ee;}
+    #subContentWrap .subContArea .qnaArea .qnaQ {position:relative; cursor: pointer; padding: 25px 10px; }  
+    #subContentWrap .subContArea .qnaArea .qnaQ:after {content:''; position:absolute; top:calc(100% - 18px); right:15px; display:inline-block; width:12px; height:6px; background:url('../new_images/common/arrowQna.png') no-repeat 0 -6px; background-size:12px; }
+    #subContentWrap .subContArea .qnaArea .qnaQ .txtQ { padding:0px 25px 0px 0px; }
+    #subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection { display: flex; justify-content:flex-start; padding-bottom:10px; }
+    #subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li { font-size:12px; line-height:15px; color:#727476; font-weight:400; padding:0 10px; border-right:1px solid #cccccc; }
+    #subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li:first-child { padding-left:0; }
+    #subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li:last-child { border-right:0; }
+    #subContentWrap .subContArea .qnaArea .qnaQ .txtQ .qnaText { font-size:15px; line-height:18px; font-weight:400; color:#292a2d; }
+    #subContentWrap .subContArea .qnaArea .qnaA { position:relative; padding:24px 19px 24px 38px; border-bottom: 1px dashed #e3e7ee; background:#f4f6f9; display:none; }
+    #subContentWrap .subContArea .qnaArea .iconA { position:absolute; top:50%; left:15px; margin-top:-10px; display:inline-block; border-bottom:1px solid #4171df; width:16px; height:20px; background:url('../new_images/common/icoAnswer.png') no-repeat center 0; background-size:13px 15px; font-size:0; }
+    #subContentWrap .subContArea .qnaArea .qnaA .txtA { color:#65646a; line-height:19px; font-size:13px; font-weight:400; }
+    #subContentWrap .subContArea .qnaArea > ul > li.on {border-bottom:none;}
+    #subContentWrap .subContArea .qnaArea > ul > li.on .qnaQ:after { background-position:0 0;}
+    #subContentWrap .subContArea .qnaArea > ul > li.on .txtQ {color:#333;}
+    #subContentWrap .subContArea .qnaArea > ul + .pagenation { display:none; }
+    #subContentWrap .subContArea .qnaArea .moreBtn { display:block; margin-top:10px; text-align:center; }
+    #subContentWrap .subContArea .qnaArea .moreBtn > button { font-size:12px; font-weight:400; color:#333333; text-align:left; width:107px; height:18px; line-height:18px; background:url('../new_images/common/btnMore.png') 100% 0 no-repeat; background-size:18px; }
+}
